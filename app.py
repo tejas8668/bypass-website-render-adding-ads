@@ -304,6 +304,10 @@ def Modijiurl_in1(url, delay=0):
 def home():
     return render_template('index.html')
 
+@app.route('/71bb2d29716a1d6c9e4d.txt')
+def hilltopads_txt_verification():
+    return app.send_static_file('71bb2d29716a1d6c9e4d.txt')
+
 @app.route('/check_url', methods=['POST'])
 @login_required
 @token_required
